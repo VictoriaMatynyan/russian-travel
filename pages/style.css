@@ -1,11 +1,10 @@
 @import url(../vendor/normalize.css);
 
 
-
 .page {
-    min-width: 320px;
     max-width: 1280px;
     margin: 0;
+    padding: 0;
     background-color: #2A2C2F;
     font-family: 'Inter', sans-serif;
     color: #fff;
@@ -15,6 +14,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    box-sizing: border-box;
 }
 
 .header {
@@ -62,6 +62,8 @@
 
 .content {
     max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .lead {
@@ -174,19 +176,17 @@
 .places {
     padding-top: 92px;
     max-width: 984px;
-    min-height: 3392px;
-    display: grid;
-    align-self: center;
-    justify-self: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, minmax(min-content, max-content));
-    column-gap: 40px;
-    row-gap: 80px;
+    margin: auto;
 }
 
 .place {
-    max-width: 984px;
-    max-height: 3392px;
+    display: grid;
+    grid-template-columns: minmax(460px, max-content) minmax(min-content, max-content);
+    grid-template-rows: minmax(min-content, max-content) minmax(460px, max-content);
+    row-gap: 48px;
+    column-gap: 40px;
+    padding-bottom: 80px;
+    
 }
 
 .place__title {
@@ -200,24 +200,49 @@
 }
 
 .place__image {
-    max-width: 100%;
+    max-width: 460px;
 }
 
 .place__website {
+    max-width: 456px;
+    align-self: end;
+    margin: 0;
 
 }
 
 .place__webside_url-heading {
-
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    color: #aaa;
+    padding-bottom: 12px;
+    margin: 0;
 }
 
 .place__webside_link {
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    margin: 0;
+}
 
+.place__paragraphs {
+    max-width: 484px;
 }
 
 .place__paragraph {
-
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding-bottom: 26px;
 }
+
+
 
 .cover {
     max-width: calc(100% - 96px);
@@ -226,7 +251,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    object-position: center;
+    
 }
 
 .cover__title {
@@ -254,7 +279,7 @@
 }
 
 .cover__background {
-    width: calc(100% - 96px);
+    max-width: calc(100% - 96px);
     max-height: 740px;
     padding: 0 48px;
     position: absolute;
@@ -271,7 +296,7 @@
     align-items: center;
     justify-self: center;
     object-position: center;
-    opacity: 0.7;
+    opacity: 70%;
     text-decoration: none;
     z-index: 2;
 }
