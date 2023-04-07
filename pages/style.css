@@ -3,6 +3,7 @@
 
 
 .page {
+    min-width: 320px;
     max-width: 1280px;
     margin: 0;
     background-color: #2A2C2F;
@@ -159,11 +160,11 @@
 }
 
 .photo-grid {
-    padding-top: 92px;
+    max-width: calc(100%-98px);
+    padding: 92px 48px 0;
     display: grid;
     grid-template: repeat(3, minmax(min-content, max-content)) / repeat(4, minmax(min-content, max-content));
     gap: 16px;
-    justify-items: center;
 }
 
 .photo-grid__item {
@@ -173,16 +174,119 @@
 .places {
     padding-top: 92px;
     max-width: 984px;
-    max-height: 3392px;
+    min-height: 3392px;
     display: grid;
-    grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, minmax(min-content, max-content));
     column-gap: 40px;
+    row-gap: 80px;
+}
+
+.place {
+    max-width: 984px;
+    max-height: 3392px;
+}
+
+.place__title {
+    max-width: 460px;
+    max-height: 152px;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1.1;
+    text-align: left;
+    margin: 0;
+}
+
+.place__image {
+    max-width: 100%;
+}
+
+.place__website {
+
+}
+
+.place__webside_url-heading {
+
+}
+
+.place__webside_link {
+
+}
+
+.place__paragraph {
+
 }
 
 .cover {
-
+    max-width: calc(100% - 96px);
+    min-height: 740px;
+    padding: 0 48px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    object-position: center;
 }
 
-.footer {
+.cover__title {
+    max-width: 560px;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1.1;
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    padding-top: 245px;
+    z-index: 3;
+}
 
+.cover__subtitle {
+    max-width: 360px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    align-self: center;
+    z-index: 3;
+    margin: 0;
+    padding-top: 32px;
+}
+
+.cover__background {
+    width: calc(100% - 96px);
+    max-height: 740px;
+    padding: 0 48px;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.cover__overlay {
+    max-width: 100%;
+    background-color: #2A2C2F;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-self: center;
+    object-position: center;
+    opacity: 0.7;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.cover__overlay:hover {
+    opacity: 0.3;
+    transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+}
+
+
+.footer {
+    padding: 92px;
+    position: relative;
 }
