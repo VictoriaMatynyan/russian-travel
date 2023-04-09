@@ -1,12 +1,26 @@
 @import url(../vendor/normalize.css);
 
+@font-face {
+    src: url(../fonts/Inter_Web/Inter-Light.woff),
+        url(../fonts/Inter_Web/Inter-Light.woff2);
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter_Web/Inter-ExtraBold.woff),
+        url(../fonts/Inter_Web/Inter-ExtraBold.woff2);
+    font-weight: 900;
+}
+
+
 
 .page {
-    max-width: 1280px;
     margin: 0;
     padding: 0;
     background-color: #2A2C2F;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     color: #fff;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -17,10 +31,9 @@
 }
 
 .header {
+    max-width: calc(100% - 48px*2);
     display: flex;
     padding-top: 28px;
-    max-width: 1184px;
-    max-height: 52px;
     align-items: center;
     margin: auto;
     justify-content: space-between;
@@ -29,7 +42,7 @@
 
 .header__logo {
     display: flex;
-    max-width: 177px;
+    max-width: calc(100% - 30px*2 - 18px);
     max-height: 52px;
     z-index: 2;
     align-items: center;
@@ -37,18 +50,15 @@
 }
 
 .header__lang-links {
-    display: flex;
     margin: 0;
 }
 
 .header__lang-link {
-    max-width: 30px;
-    max-height: 28px;
+    max-width: calc(100% - 176px - 18px);
     font-weight: 400;
     font-size: 24px;
-    line-height: 1.8;
+    line-height: 1.2;
     color: #fff;
-    text-decoration: none;
     text-align: right;
 }
 
@@ -56,12 +66,12 @@
     margin-right: 18px;
 }
 
-.header__lang-link_active {
-    text-decoration: underline;
+.header__lang-link_inactive {
+    text-decoration: none;
 }
 
 .content {
-    max-width: 100%;
+    max-width: calc(100% - 48px*2);
     margin: 0;
     padding: 0;
 }
@@ -70,24 +80,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 984px;
-    max-height: 1005px;
+    max-width: calc(100% - 100px*2);
     margin: 0 auto;
 }
 
 .lead__title {
-    max-width: 720px;
+    max-width: calc(100% - (280px - 48px - 100px)*2);
     max-height: 200px;
     padding-top: 56px;
     font-weight: 900;
     font-size: 96px;
-    line-height: 1;
+    line-height: 100px;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .lead__subtitle {
-    max-width: 640px;
+    max-width: calc(100% - (320px - 48px - 100px)*2);
     min-height: 72px;
     padding-top: 32px;
     font-weight: 400;
@@ -101,14 +110,12 @@
 .lead__image {
     display: flex;
     max-width: 100%;
-    width: 984px;
-    max-height: 615px;
     padding-top: 64px;
     align-self: center;
 }
 
 .lead__caption {
-    min-width: 158px;
+    min-width: calc(100% - 974px - 148px - 48px);
     min-height: 4px;
     padding-top: 8px;
     font-weight: 400;
@@ -162,7 +169,7 @@
 }
 
 .photo-grid {
-    max-width: calc(100% - 98px);
+    max-width: calc(100% - 96px);
     padding-top: 92px;
     margin: 0 auto;
     display: grid;
@@ -177,7 +184,7 @@
 
 .places {
     padding-top: 92px;
-    max-width: 984px;
+    max-width: calc(100% - 148px*2);
     margin: auto;
     box-sizing: border-box;
 }
@@ -209,7 +216,6 @@
     max-width: 456px;
     align-self: end;
     margin: 0;
-
 }
 
 .place__webside_url-heading {
@@ -236,7 +242,7 @@
 }
 
 .place__paragraph {
-    width: 100%;
+    max-width: 100%;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
@@ -248,7 +254,7 @@
 
 .cover {
     max-width: calc(100% - 96px);
-    height: 740px;
+    min-height: 740px;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -281,7 +287,7 @@
 }
 
 .cover__background {
-    max-height: 740px;
+    max-height: 100%;
     object-fit: cover;
 }
 
