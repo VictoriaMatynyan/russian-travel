@@ -1,0 +1,8 @@
+.header__logo {
+    display: flex;
+    max-width: calc(100% - 30px*2 - 18px);
+    max-height: 52px;
+    z-index: 2;
+    align-items: center;
+    justify-self: center;
+}

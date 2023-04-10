@@ -1,0 +1,16 @@
+.header__lang-link {
+    max-width: calc(100% - 176px - 18px);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #fff;
+    text-align: right;
+}
+
+.header__lang-link:first-of-type {
+    margin-right: 18px;
+}
+
+.header__lang-link_inactive {
+    text-decoration: none;
+}
