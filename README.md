@@ -1,6 +1,6 @@
 # Project No.2: [Travel around Russia](https://victoriamatynyan.github.io/russian-travel/)
 
-### Обзор
+### Review
 This is my 2nd project realized during studying at [Yandex Praktikum](https://practicum.yandex.ru/) for web-developers.  
 The Project No.2 is dedicated to travelling around Russia and throws light on popular and not very places to go on holiday or even relocate to.
 
@@ -13,5 +13,5 @@ The Project No.2 is dedicated to travelling around Russia and throws light on po
 * media queries&ast;.  
 &ast;Adaptive web-design has been realized for most common screen resolutions.
 
-**Figma**
+### Figma
 * [Project reference in Figma](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0)
