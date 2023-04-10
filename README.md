@@ -2,8 +2,7 @@
 
 ### Обзор
 This is my 2nd project realized during studying at [Yandex Praktikum](https://practicum.yandex.ru/) for web-developers.  
-This project dedicated to travelling around Russia.  
-Project No.2 throws light on popular and not very places to go on holiday or even relocate to.
+The Project No.2 is dedicated to travelling around Russia and throws light on popular and not very places to go on holiday or even relocate to.
 
 ### Applied decisions in Project No.2:
 * HTML and CSS coding;
