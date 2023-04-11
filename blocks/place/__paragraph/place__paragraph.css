@@ -3,7 +3,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
-    padding-left: 16px;
     margin: 0;
 }
 
@@ -11,6 +10,12 @@
     .place__paragraph {
         font-size: 16px;
         line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .place__paragraph {
+        padding-left: 16px;
     }
 }
 
@@ -23,3 +28,6 @@
         padding-top: 25px;
     }
 }
+
+
+
