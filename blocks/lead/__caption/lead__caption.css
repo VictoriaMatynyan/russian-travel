@@ -1,5 +1,5 @@
 .lead__caption {
-    min-width: calc(100% - 974px - 148px - 48px);
+    max-width: 158px;
     padding-top: 8px;
     font-weight: 400;
     font-size: 10px;

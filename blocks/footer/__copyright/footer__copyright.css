@@ -5,9 +5,15 @@
     line-height: 16px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 751px) {
     .footer__copyright {
         line-height: 14px;
         padding-top: 48px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__copyright {
+        line-height: 14px;
     }
 }
