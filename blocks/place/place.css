@@ -11,6 +11,8 @@
 
 @media screen and (max-width: 1024px) {
     .place {
+        grid-template-rows: repeat(2, minmax(min-content, max-content));
+        grid-template-columns: fit-content(440px) fit-content(456px);
         column-gap: 32px;
         padding-bottom: 80px;
     }
@@ -18,6 +20,8 @@
 
 @media screen and (max-width: 768px) {
     .place {
+        grid-template-rows: repeat(2, minmax(min-content, max-content));
+        grid-template-columns: fit-content(340px) fit-content(352px);
         column-gap: 28px;
         padding-bottom: 73px;
     }
