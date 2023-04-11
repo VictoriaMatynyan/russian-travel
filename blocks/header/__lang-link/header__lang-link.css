@@ -14,3 +14,12 @@
 .header__lang-link_inactive {
     text-decoration: none;
 }
+
+@media screen and (max-width: 320px) {
+    .header__lang-link {
+        max-width: calc(100% - 172px - 16px);
+        padding-top: 16px;
+        font-size: 18px;
+        line-height: 1.1;
+    }
+}

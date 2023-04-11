@@ -1,0 +1,19 @@
+.place__webside_link {
+    max-width: 100%;    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    margin: 0;
+    opacity: 1;
+}
+
+.place__webside_link:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity .2s ease 0s;
+    -webkit-transition: opacity .2s ease 0s;
+    -moz-transition: opacity .2s ease 0s;
+    -ms-transition: opacity .2s ease 0s;
+    -o-transition: opacity .2s ease 0s;
+}
