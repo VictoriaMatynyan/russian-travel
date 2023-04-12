@@ -13,15 +13,3 @@
         max-width: 100%;
     }
 }
-
-@media screen and (max-width: 768px) {
-    .cover {
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 442px) {
-    .cover {
-        max-width: 100%;
-    }
-}

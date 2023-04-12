@@ -11,22 +11,16 @@
 @media screen and (max-width: 1024px) {
     .photo-grid {
         max-width: calc(100% - 96px);
-        margin: 0 auto;
-        display: grid;
         grid-template: repeat(4, minmax(min-content, max-content)) / repeat(3, minmax(min-content, max-content));
         gap: 14px;
-        box-sizing: border-box;
     }
 }
 
 @media screen and (max-width: 768px) {
     .photo-grid {
         max-width: calc(100% - 48px);
-        margin: 0 auto;
-        display: grid;
         grid-template: repeat(5, minmax(min-content, max-content)) / repeat(2, minmax(min-content, max-content));
         gap: 16px;
-        box-sizing: border-box;
         padding-top: 88px;
     }
 }
