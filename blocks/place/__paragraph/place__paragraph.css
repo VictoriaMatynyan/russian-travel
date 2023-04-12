@@ -8,15 +8,21 @@
 
 @media screen and (max-width: 768px) {
     .place__paragraph {
-        font-size: 16px;
         line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 743px) {
+    .place__paragraph {
+        padding-left: 16px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .place__paragraph {
-        padding-left: 16px;
-    }
+        font-size: 16px;
+        max-width: calc(100% - 32px); 
+    }   
 }
 
 .place__paragraph:nth-of-type(2n) {

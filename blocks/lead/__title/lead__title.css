@@ -10,23 +10,19 @@
 @media screen and (max-width: 768px) {
     .lead__title {
         max-width: calc(100% - 48px);
-        display: flex;
-        margin: 0;
     }
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 767px) {
     .lead__title {
-        width: 100%;
-        font-size: calc(40px + (96 - 40) * (100vw / 1280));
+        max-width: calc(100% - 16px*2);
+        font-size: 12.5vw;
     }
 }
 
 @media screen and (max-width: 320px) {
     .lead__title {
-        max-width: calc(100% - 16px*2);
-        display: flex;
-        margin: 0;
         font-size: 40px;
+        line-height: 1.1;
     }
 }

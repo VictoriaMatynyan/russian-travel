@@ -8,6 +8,12 @@
     text-align: center;
 }
 
+@media screen and (max-width: 376px) {
+    .cover__subtitle {
+        font-size: 4.8vw;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .cover__subtitle {
         width: calc(100% - 32px);
