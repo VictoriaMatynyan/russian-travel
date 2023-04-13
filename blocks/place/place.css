@@ -10,7 +10,6 @@
     .place {
         grid-template-columns: 440px fit-content(456px);
         column-gap: 32px;
-        padding-bottom: 80px;
     }
 }
 

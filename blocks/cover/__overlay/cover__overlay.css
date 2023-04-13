@@ -14,7 +14,7 @@
 }
 
 .cover__overlay:hover {
-    background-color: rgba(42, 44, 47, 0.7);
+    background-color: rgba(42, 44, 47, 0.8);
     transition: background-color 1s ease-in-out;
     -webkit-transition: background-color 1s ease-in-out;
     -moz-transition: background-color 1s ease-in-out;
