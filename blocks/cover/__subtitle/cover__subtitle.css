@@ -6,6 +6,8 @@
     padding-top: 32px;
     margin: 0 auto;
     text-align: center;
+    color: #fff;
+    z-index: 5;
 }
 
 @media screen and (max-width: 376px) {

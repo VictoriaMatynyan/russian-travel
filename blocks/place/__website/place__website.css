@@ -2,8 +2,18 @@
     max-width: 456px;
     align-self: end;
     margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
+/* тест */
+@media screen and (max-width: 768px) {
+    .place__website {
+        grid-area: website;
+    }
+}
+
+/* Для правила выше взято за основу это правило */
 @media screen and (max-width: 743px) {
     .place__website {
         margin-left: 16px;
