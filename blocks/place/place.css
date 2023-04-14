@@ -16,11 +16,9 @@
 
 @media screen and (max-width: 768px) {
     .place {
-        /* grid-template-columns: 340px fit-content(352px); */
-        grid-template: min-content max-content 1fr / min-content 1fr;
+        grid-template: min-content max-content / min-content 1fr;
         grid-template-areas: 
         "title website"
-        "image paragraphs"
         "image paragraphs";
         column-gap: 28px;
         padding-bottom: 73px;
