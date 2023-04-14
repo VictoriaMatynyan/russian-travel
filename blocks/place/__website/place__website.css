@@ -6,14 +6,12 @@
     list-style: none;
 }
 
-/* тест */
 @media screen and (max-width: 768px) {
     .place__website {
         grid-area: website;
     }
 }
 
-/* Для правила выше взято за основу это правило */
 @media screen and (max-width: 743px) {
     .place__website {
         margin-left: 16px;

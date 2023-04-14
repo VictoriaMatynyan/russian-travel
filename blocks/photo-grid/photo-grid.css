@@ -27,7 +27,7 @@
 @media screen and (max-width: 320px) {
     .photo-grid {
         max-width: calc(100% - 32px);
-        grid-template: repeat(12, minmax(min-content, max-content)) / minmax(min-content, max-content);
+        grid-template: repeat(12, fit-content(216px)) / 1fr;
         padding-top: 64px;
     }
 }

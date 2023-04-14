@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 768px) {
     .place {
-        grid-template: min-content max-content / min-content 1fr;
+        grid-template: min-content max-content / fit-content(340px) 1fr;
         grid-template-areas: 
         "title website"
         "image paragraphs";
@@ -28,12 +28,17 @@
 @media screen and (max-width: 743px) {
     .place {
         grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "website"
+        "image"
+        "paragraphs";
     }
 }
 
 @media screen and (max-width: 320px) {
     .place {
-        row-gap: 28px;
+        row-gap: 32px;
         padding-bottom: 50px;
     }
 }
